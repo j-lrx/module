@@ -13,7 +13,7 @@ variable "protocol" {
 }
 
 variable "ports" {
-  type = list()
+  type = list(number)
 }
 
 variable "source_ranges" {
