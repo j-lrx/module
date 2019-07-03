@@ -1,5 +1,5 @@
 resource "google_compute_subnetwork" "subnet"{
-    Name             = "${var.name}"
+    name             = "${var.name}"
     project          = "${var.project_id}"
     ip_cidr_range    = "${var.cidr_range}"
     network          = "${var.network_id}"
