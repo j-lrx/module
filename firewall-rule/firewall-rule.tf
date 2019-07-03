@@ -7,6 +7,6 @@ resource "google_compute_firewall" "firewall-rule" {
     protocol = "${var.protocol}"
     ports    = var.ports
   }
-  target_tags   = ["${var.tags}"]
-  source_ranges = ["${var.source_ranges}"]
+  target_tags   = var.tags
+  source_ranges = var.source_ranges
 }
