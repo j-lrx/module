@@ -1,6 +1,6 @@
 #variables vpc
 
-variable "vpc_name" {
+variable "name" {
   type = string
 }
 
