@@ -9,7 +9,7 @@ variable "project_id" {
 }
 
 
-variable "cicr_range" {
+variable "cidr_range" {
   type = string
 }
 
