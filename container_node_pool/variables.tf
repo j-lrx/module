@@ -21,6 +21,18 @@ variable "max_node_count" {
   default = 12
 }
 
+variable "machine_type" {
+  type    = string
+  default = "n1-standard-1"
+}
+
+
+variable "preemtible" {
+  type    = bool
+  default = false
+}
+
+
 variable "auto_repair" {
   type    = bool
   default = true
