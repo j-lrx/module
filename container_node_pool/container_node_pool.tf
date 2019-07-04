@@ -1,4 +1,4 @@
-resource "google_container_node_pool" "containe_node_pool" {
+resource "google_container_node_pool" "container_node_pool" {
   name     = var.name
   location = var.location
   cluster  = var.cluster

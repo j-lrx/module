@@ -17,7 +17,7 @@ variable "ports" {
 }
 
 variable "source_ranges" {
-  type = list(string)
+  type    = list(string)
 }
 
 variable "tags" {
