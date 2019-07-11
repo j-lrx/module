@@ -17,7 +17,7 @@ variable "network" {
 
 variable "labels" {
   type    = list(string)
-  default = [""]
+  default = ["label"]
 }
 
 
