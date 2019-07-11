@@ -15,6 +15,11 @@ variable "network" {
   type = string
 }
 
+variable "labels" {
+  type    = list(string)
+  default = [""]
+}
+
 
 variable "min_node" {
   type    = number
