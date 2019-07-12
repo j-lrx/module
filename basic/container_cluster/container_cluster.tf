@@ -5,7 +5,7 @@ resource "google_container_cluster" "container_cluster" {
     network                     = var.network
     resource_labels             = var.labels
 
-    autoscaling {
+    autoscaling = {
         min_node_count          = var.min_node
         max_node_count          = var.max_node
     }

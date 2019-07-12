@@ -15,12 +15,6 @@ variable "network" {
   type = string
 }
 
-variable "labels" {
-  type    = list(string)
-  default = ["label"]
-}
-
-
 variable "min_node" {
   type    = number
   default = 1
