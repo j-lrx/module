@@ -5,7 +5,6 @@ variable "name" {
 #region or zone
 variable "location" {
   type    = string
-  default = "europe-west-1"
 }
 variable "project" {
   type = string
