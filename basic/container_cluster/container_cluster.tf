@@ -8,9 +8,7 @@ resource "google_container_cluster" "container_cluster" {
     remove_default_node_pool = true
     initial_node_count = 1
 
-    addons_config {
-        network_policy {
-            disabled            = false
-        }
+    network_policy {
+        disabled            = false
     }
 }
