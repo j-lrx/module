@@ -3,8 +3,10 @@ resource "google_container_node_pool" "container_node_pool" {
   location = var.location
   cluster  = var.cluster
   project  = var.project
+  node_count = "1"
 
   autoscaling {
+      enable         = true
       min_node_count = var.min_node_count
       max_node_count = var.max_node_count
   }
