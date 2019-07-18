@@ -11,7 +11,7 @@ resource "google_container_node_pool" "container_node_pool" {
 
   node_config {
       machine_type = var.machine_type
-      preemtible   = var.preemtible
+      preemptible   = var.preemptible
   }
 
   management {

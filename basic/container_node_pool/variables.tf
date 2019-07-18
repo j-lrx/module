@@ -32,7 +32,7 @@ variable "machine_type" {
 }
 
 
-variable "preemtible" {
+variable "preemptible" {
   type    = bool
   default = false
 }
