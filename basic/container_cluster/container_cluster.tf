@@ -5,10 +5,11 @@ resource "google_container_cluster" "container_cluster" {
     network                     = var.network
     subnetwork                  = var.subnetwork
 
-    remove_default_node_pool = true
-    initial_node_count = 1
+    remove_default_node_pool    = true
+    initial_node_count          = 1
 
     network_policy {
-        disabled            = false
+        enabled                 = true
+        provider                = "CALICO"
     }
 }
