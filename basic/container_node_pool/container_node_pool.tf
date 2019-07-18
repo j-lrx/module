@@ -2,6 +2,7 @@ resource "google_container_node_pool" "container_node_pool" {
   name     = var.name
   location = var.location
   cluster  = var.cluster
+  project  = var.project
 
   autoscaling {
       min_node_count = var.min_node_count
@@ -17,9 +18,4 @@ resource "google_container_node_pool" "container_node_pool" {
       auto_repair    = var.auto_repair
       auto_upgrade   = var.auto_upgrade
   }
-
-  oauth_scopes = [
-      "https://www.googleapis.com/auth/logging.write",
-      "https://www.googleapis.com/auth/monitoring",
-  ]
 }

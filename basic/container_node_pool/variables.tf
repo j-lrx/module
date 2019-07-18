@@ -11,6 +11,11 @@ variable "cluster" {
   type = string
 }
 
+variable "project" {
+  type = string
+}
+
+
 variable "min_node_count" {
   type    = number
   default = 1
@@ -18,7 +23,7 @@ variable "min_node_count" {
 
 variable "max_node_count" {
   type    = number
-  default = 12
+  default = 3
 }
 
 variable "machine_type" {

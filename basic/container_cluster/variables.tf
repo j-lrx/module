@@ -15,22 +15,6 @@ variable "network" {
   type = string
 }
 
-variable "min_node" {
-  type    = number
-  default = 1
-}
-
-variable "max_node" {
-  type = number
-  default = 12
-}
-
-variable "auto_repair" {
-  type    = bool
-  default = true
-}
-
-variable "auto_upgrade" {
-  type    = bool
-  default = false
+variable "subnetwork" {
+  type = string
 }
