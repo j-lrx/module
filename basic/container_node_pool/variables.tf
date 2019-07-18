@@ -18,12 +18,12 @@ variable "project" {
 
 variable "min_node_count" {
   type    = number
-  default = 1
+  default = "1"
 }
 
 variable "max_node_count" {
   type    = number
-  default = 3
+  default = "3"
 }
 
 variable "machine_type" {

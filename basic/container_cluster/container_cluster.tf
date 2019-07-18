@@ -8,11 +8,6 @@ resource "google_container_cluster" "container_cluster" {
     remove_default_node_pool    = true
     initial_node_count          = 1
 
-    autoscaling {
-        min_node_count          = 1
-        max_node_count          = 3
-    }
-
     network_policy {
         enabled                 = true
         provider                = "CALICO"
