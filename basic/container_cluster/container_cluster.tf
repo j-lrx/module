@@ -13,7 +13,7 @@ resource "google_container_cluster" "container_cluster" {
 
     node_pool {
         name               = "pool"
-        initial_node_count = "${var.initial_node_count}"
+        /*initial_node_count = "${var.initial_node_count}"*/
 
         management {
             auto_repair  = var.auto_repair
