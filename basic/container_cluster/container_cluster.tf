@@ -10,6 +10,17 @@ resource "google_container_cluster" "container_cluster" {
         provider                = "CALICO"
     }
 
+    cluster_autoscaling {
+        enabled = true
+        resource_limits {
+            resource_type = "cpu"
+            minimum = 3
+        }
+        resource_limits {
+            resource_type = "memory"
+            minimum = 11
+      }
+    }
 
     node_pool {
         name               = "pool"
