@@ -12,5 +12,5 @@ output "name" {
 }
 
 output "self_link" {
-  value = "${google_container_cluster.container_cluster.self_link}"
+  value = "${google_container_cluster.container_cluster.name}"
 }
