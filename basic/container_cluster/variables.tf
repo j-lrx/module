@@ -18,6 +18,11 @@ variable "subnetwork" {
   type = string
 }
 
+variable "cluster_ipv4_cidr" {
+  type = string
+}
+
+
 variable "initial_node_count" {
   type    = number
   default = 1
