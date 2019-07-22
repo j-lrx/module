@@ -7,3 +7,8 @@ variable "name" {
 variable "project" {
   type = string
 }
+
+variable "auto_create_subnetworks"{
+  type = bool
+  default = false
+}
