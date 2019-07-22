@@ -10,7 +10,7 @@ Permet la création d'un VPC
 |name|string (required)||
 |project|string (required)||
 |auto_create_subnetworks|bool (optional)|Default: **false**|
-|description| string (optional)| Default : **<none>**|
+|description| string (optional)| Default : **<nothing>**|
 
 **Ouput**
 
