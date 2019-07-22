@@ -4,22 +4,21 @@ variable "name" {
   type = string
 }
 
-variable "project_id" {
+variable "project" {
   type = string
 }
 
-
-variable "cidr_range" {
-  type = string
-}
-
-variable "network_id" {
+variable "network" {
   type = string
 }
 
 variable "region" {
   type    = string
   default = "europe-west1"
+}
+
+variable "cidr_range" {
+  type = string
 }
 
 variable "enable_flow_logs" {
