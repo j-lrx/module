@@ -9,6 +9,11 @@ variable "project" {
 }
 
 variable "auto_create_subnetworks"{
-  type = bool
+  type    = bool
   default = false
+}
+
+variable "description" {
+  type    = string
+  Default = ""
 }
