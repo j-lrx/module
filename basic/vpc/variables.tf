@@ -15,5 +15,5 @@ variable "auto_create_subnetworks"{
 
 variable "description" {
   type    = string
-  Default = ""
+  default = ""
 }
