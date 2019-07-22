@@ -1,5 +1,6 @@
 resource "google_compute_firewall" "firewall-rule" {
   name      = "${var.name}"
+  project   = "${var.project}"
   network   = "${var.network}"
   description = "Creates Firewall rule targetting tagged instances"
 
