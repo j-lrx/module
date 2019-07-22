@@ -4,6 +4,6 @@ variable "name" {
   type = string
 }
 
-variable "project_id" {
+variable "project" {
   type = string
 }
