@@ -2,16 +2,17 @@ variable "name" {
   type = string
 }
 
+
+variable "project" {
+  type = string
+}
+
 #zone or region
 variable "location" {
   type = string
 }
 
 variable "cluster" {
-  type = string
-}
-
-variable "project" {
   type = string
 }
 
