@@ -13,7 +13,7 @@ Permet la création de règles firewall basé sur des tags réseaux.
 |protocol|string (required)|tcp ou udp|
 |ports|list(string) (required) ||
 |source_ranges|list(string) (required)||
-|tags|list(string)||
+|tags|list(string) (required)||
 
 **Ouput**
 
