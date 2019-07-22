@@ -12,8 +12,8 @@ Permet la création de règles firewall basé sur des tags réseaux.
 |network|string (required)||
 |protocol|string (required)|tcp ou udp|
 |ports|list(string) (required) ||
-|source_ranges|list(string) (required)||
 |tags|list(string) (required)||
+|source_ranges|list(string) (required)||
 
 **Ouput**
 
