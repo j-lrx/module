@@ -8,6 +8,15 @@ resource "google_container_cluster" "container_cluster" {
 
     remove_default_node_pool     = true
     initial_node_count           = 1
+    
+    cluster_autoscaling {
+        enabled = true
+        resource_limits {
+            resource_type = "cpu"
+            minimum       = 3
+            maximum       = 9
+        }
+    }
 
     addons_config {
         network_policy_config {
