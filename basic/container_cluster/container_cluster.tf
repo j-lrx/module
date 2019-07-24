@@ -7,6 +7,7 @@ resource "google_container_cluster" "container_cluster" {
     min_master_version           = "latest"
 
     remove_default_node_pool     = true
+    initial_node_count           = 1
 
     addons_config {
         network_policy_config {
