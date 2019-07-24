@@ -16,6 +16,8 @@ resource "google_container_cluster" "container_cluster" {
             resource_type = "cpu"
             minimum       = 1
             maximum       = 9
+        }
+        resource_limits {
             resource_type = "memory"
             minimum       = 3
             maximum       = 34
