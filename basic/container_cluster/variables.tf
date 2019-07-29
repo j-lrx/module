@@ -19,11 +19,6 @@ variable "subnetwork" {
   type = string
 }
 
-variable "initial_node_count"{
-  type    = number
-  default = 1
-}
-
 variable "node_ipv4_cidr" {
   type = string
 }
@@ -39,6 +34,11 @@ variable "services_ipv4_cidr" {
 variable "node_pool_name"{
   type    = string
   default = "default-node-pool"
+}
+
+variable "initial_node_count"{
+  type    = number
+  default = 1
 }
 
 variable "min_node_count"{
