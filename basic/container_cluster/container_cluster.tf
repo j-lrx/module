@@ -6,9 +6,8 @@ resource "google_container_cluster" "container_cluster" {
     network                      = var.network
     subnetwork                   = var.subnetwork
     min_master_version           = "latest"
-
     remove_default_node_pool     = false
-    initial_node_count           = var.initial_node_count
+    
     
     cluster_autoscaling {
         enabled = true
@@ -26,6 +25,7 @@ resource "google_container_cluster" "container_cluster" {
     
     node_pool {
         name                = var.node_pool_name
+        initial_node_count  = var.initial_node_count
 
         autoscaling {
             min_node_count  = var.min_node_count
