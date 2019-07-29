@@ -19,6 +19,11 @@ variable "subnetwork" {
   type = string
 }
 
+variable "initial_node_count"{
+  type    = number
+  default = 1
+}
+
 variable "node_ipv4_cidr" {
   type = string
 }
