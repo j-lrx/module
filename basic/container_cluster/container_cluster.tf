@@ -1,5 +1,4 @@
 resource "google_container_cluster" "container_cluster" {
-    provider                     = "google"
     name                         = var.name
     location                     = var.location
     project                      = var.project
