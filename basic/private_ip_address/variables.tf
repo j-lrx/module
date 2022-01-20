@@ -21,3 +21,7 @@ variable "ip_version" {
   type    = string
   default = "IPV4"
 }
+
+variable "network" {
+  type    = string
+}
