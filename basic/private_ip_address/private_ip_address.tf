@@ -1,3 +1,7 @@
+resource "google_compute_network" "peering_network" {
+  name = "peering-network"
+}
+
 resource "google_compute_global_address" "private_ip_address" {
 
   name          = var.name
@@ -5,6 +9,6 @@ resource "google_compute_global_address" "private_ip_address" {
   purpose       = var.purpose
   address_type  = var.address_type
   prefix_length = 16
-  network       = var.network
+  network       = google_compute_network.peering_network.id
   ip_version    = var.ip_version
 }
