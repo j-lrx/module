@@ -20,8 +20,3 @@ variable "region" {
 variable "cidr_range" {
   type = string
 }
-
-variable "enable_flow_logs" {
-  type    = bool
-  default = false
-}
