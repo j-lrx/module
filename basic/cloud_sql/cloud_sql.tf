@@ -1,3 +1,10 @@
+resource "google_service_networking_connection" "private_vpc_connection" {
+
+  network                 = var.network
+  service                 = "servicenetworking.googleapis.com"
+  reserved_peering_ranges = [var.private_ip_address]
+}
+
 resource "google_sql_database_instance" "sql_db" {
   provider = google-beta
   name             = var.name
