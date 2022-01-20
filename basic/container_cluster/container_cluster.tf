@@ -51,10 +51,6 @@ resource "google_container_cluster" "container_cluster" {
         http_load_balancing {
             disabled = false
         }
-
-        kubernetes_dashboard {
-            disabled = false
-        }
     }
 
     network_policy {
