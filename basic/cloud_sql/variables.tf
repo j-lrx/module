@@ -39,3 +39,7 @@ variable "availability_type" {
 variable "private_vpc_connection" {
   type = string
 }
+
+variable "private_ip_address" {
+  type = string
+}
