@@ -59,7 +59,6 @@ resource "google_container_cluster" "container_cluster" {
     }
 
     ip_allocation_policy {
-        node_ipv4_cidr_block     = var.node_ipv4_cidr
         cluster_ipv4_cidr_block  = var.cluster_ipv4_cidr
         services_ipv4_cidr_block = var.services_ipv4_cidr
     }
