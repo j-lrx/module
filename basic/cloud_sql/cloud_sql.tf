@@ -1,4 +1,5 @@
 resource "google_sql_database_instance" "sql_db" {
+  provider = google-beta
   name             = var.name
   project          = var.project
   database_version = var.version
