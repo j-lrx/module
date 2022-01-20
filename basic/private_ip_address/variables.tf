@@ -1,5 +1,5 @@
 variable "name" {
-  type = string
+  type    = string
   default = "ip_address"
 }
 
@@ -8,14 +8,20 @@ variable "project" {
 }
 
 variable "purpose" {
-  type = string
+  type    = string
+  default ="VPC_PEERING"
 }
 
 variable "address_type" {
-  type = string
+  type    = string
   default = "INTERNAL"
 }
 
 variable "network" {
   type = string
+}
+
+variable "ip_version" {
+  type    = string
+  default = "IPV4"
 }
