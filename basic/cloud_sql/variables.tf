@@ -7,6 +7,10 @@ variable "project" {
   type = string
 }
 
+variable "network" {
+  type = string
+}
+
 variable "database_version" {
   type = string
   default = "POSTGRES_13"
