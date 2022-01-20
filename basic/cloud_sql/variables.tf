@@ -7,7 +7,7 @@ variable "project" {
   type = string
 }
 
-variable "version" {
+variable "database_version" {
   type = string
   default = "POSTGRES_13"
 }
