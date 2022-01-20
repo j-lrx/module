@@ -17,10 +17,6 @@ variable "address_type" {
   default = "INTERNAL"
 }
 
-variable "network" {
-  type = string
-}
-
 variable "ip_version" {
   type    = string
   default = "IPV4"
