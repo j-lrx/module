@@ -36,10 +36,6 @@ variable "availability_type" {
   default = "REGIONAL"
 }
 
-variable "private_vpc_connection" {
-  type = string
-}
-
 variable "private_ip_address" {
   type = string
 }
