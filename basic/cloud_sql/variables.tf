@@ -1,6 +1,6 @@
 variable "name" {
   type = string
-  default = "DB"
+  default = "db"
 }
 
 variable "project" {
