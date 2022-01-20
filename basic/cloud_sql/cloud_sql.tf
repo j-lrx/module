@@ -6,7 +6,7 @@ resource "google_sql_database_instance" "sql_db" {
   region           = var.region
   root_password    = var.root_pwd
   
-  depends_on       = [var.private_vpc_connection]
+  depends_on       = [google_service_networking_connection.private_vpc_connection]
 
   settings {
     tier              = var.tier
