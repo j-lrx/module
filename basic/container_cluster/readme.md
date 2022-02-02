@@ -16,6 +16,12 @@ Voir le module container_node_pool pour ajouter un ou plusieurs node pool au clu
 |node_ipv4_cidr| string (required) | ||
 |cluster_ipv4_cidr| string (required) | |Pas d'overlapping avec _node_ipv4_cidr_.  Doit avoir un netmask compris entre /9 et /29 |
 |services_ipv4| string (required)||Pas d'overlapping avec _node_ipv4_cidr_ ni avec _cluster_ipv4_cidr_.  Doit avoir un netmask compris entre /9 et /29|
+|min_master_version|string (otional)|latest||
+|enable_cluster_autoscaling (otional)|bool|true||
+|cpu_min|number (otional)|1||
+|cpu_max|number (otional)|32||
+|ram_min|number (otional)|2||
+|ram_max|number (otional)|32||
 
 **Output**
 
