@@ -22,7 +22,7 @@ resource "google_compute_managed_ssl_certificate" "default" {
   name = "test-cert"
 
   managed {
-    domains = ["sslcert.tf-test.club."]
+    domains = ["onepoint-gsuite.cloud"]
   }
 }
 
