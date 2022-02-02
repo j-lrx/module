@@ -7,7 +7,7 @@ Voir le module container_node_pool pour ajouter un ou plusieurs node pool au clu
 **Input**
 
 |Variable|Type|Default|Commentaire|
-|:-------|:---|:------|:----------------|
+|:-------|:---|:-----------|:----------------|
 |name|string (required)| ||
 |project|string (required)| ||
 |network| string (required) | ||
