@@ -19,6 +19,36 @@ variable "subnetwork" {
   type = string
 }
 
+variable "min_master_version" {
+  type    = string
+  default = "lastest"
+}
+
+variable "enable_cluster_autoscaling" {
+  type    = bool
+  default = true
+}
+
+variable "cpu_min" {
+  type    = number
+  default = 1
+} 
+
+variable "cpu_max" {
+  type    = number
+  default = 32
+}
+
+variable "ram_min" {
+  type    = number
+  default = 2
+} 
+
+variable "ram_max" {
+  type    = number
+  default = 32
+} 
+
 variable "node_ipv4_cidr" {
   type = string
 }
