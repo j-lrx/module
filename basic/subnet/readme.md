@@ -1,4 +1,4 @@
-**Subent**
+**Subnet**
 ==
 
 Permet la création d'un subnet, rattaché à un VPC. 
